@@ -1,0 +1,22 @@
+{
+  "name": "photo",
+  "version": "1.0.0",
+  "description": "Landing page for portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irenekochetkova/photo_video_service.git"
+  },
+  "author": "Irina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irenekochetkova/photo_video_service/issues"
+  },
+  "homepage": "https://github.com/irenekochetkova/photo_video_service#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
