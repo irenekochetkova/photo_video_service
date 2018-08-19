@@ -14,4 +14,36 @@
 
   }
 
+  &__icon-star {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-orangered-light, $color-orangered-dark);
+    -webkit-background-clip: text;
+    color: transparent;  
+
+  }
+
+  &_side {
+    padding: 1rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        // text-align: justify;
+        text-justify: inter-word;
+        font-size: 1.5rem;
+        padding: .2rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-primary-light;
+        }
+      }
+    }
+  } 
+
 }
+

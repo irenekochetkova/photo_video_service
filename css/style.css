@@ -226,6 +226,25 @@ body {
     background-image: linear-gradient(to right, #e8bd72, #9f6f1a);
     -webkit-background-clip: text;
     color: transparent; }
+  .feature-box__icon-star {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #e8bd72, #9f6f1a);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box_side {
+    padding: 1rem; }
+    .feature-box_side ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .feature-box_side ul li {
+        text-justify: inter-word;
+        font-size: 1.5rem;
+        padding: .2rem; }
+        .feature-box_side ul li:not(:last-child) {
+          border-bottom: 1px solid #e1e3e7; }
 
 .composition {
   position: relative; }
@@ -357,5 +376,5 @@ body {
   padding-bottom: 8rem; }
 
 .section-list-services {
-  background-color: #25282e;
+  background-color: #3d3f42;
   padding-bottom: 8rem; }
