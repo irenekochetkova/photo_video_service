@@ -1,0 +1,81 @@
+.card {
+
+// FUNCTIONALITY
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 37.5rem;
+  transition: transform .3s;
+
+  &_side {
+    height: 40rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-primary-light, .15);
+
+    &--front {
+      background-color: $color-white;
+    }
+
+  }  
+  
+
+  // FRONT SIDE STYLING
+  &_picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;    
+    -webit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    
+
+    &--1 {
+      background-image: url(../img/wedding_1-small.jpeg);
+    }
+
+    &--2 {
+      background-image: url(../img/child_5-small.jpeg);
+    }
+
+    &--3 {
+      background-image: url(../img/school_1-small.jpeg);
+    }
+
+    &--4 {
+      background-image: url(../img/child_1-small.jpg);
+    }
+
+    &--5 {
+      background-image: url(../img/outside_1-small.jpeg);
+    }
+
+    &--6 {
+      background-image: url(../img/birthday_4-small.jpeg);
+    }
+
+  }
+
+
+  &_details {
+    padding: 1.5rem;
+
+    &-box {
+      font-size: 1.3rem;
+      padding: .5rem;
+      text-align: center;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.2);
+  }
+}

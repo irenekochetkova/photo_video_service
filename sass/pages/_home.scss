@@ -1,10 +1,15 @@
 .section-about {
   background-color: $color-primary-light;
-  margin: 2rem 8rem 2rem 8rem;
+  // margin: 2rem 8rem 2rem 8rem;
   
 }
 
 .section-service {
-  background-color: $color-primary-light;
-  margin: 2rem 8rem 2rem 8rem;
+  background-color: $color-white;
+  padding-bottom: 8rem;
+}
+
+.section-list-services {
+  background-color: $color-primary-dark;
+  padding-bottom: 8rem;
 }
