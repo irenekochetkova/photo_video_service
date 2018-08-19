@@ -41,7 +41,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #25282e; }
+  background-color: #e1e3e7; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -105,6 +105,16 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -160,6 +170,25 @@ body {
   animation: moveInBottom .5s ease-out .075s;
   animation-fill-mode: backwards; }
 
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #dc9c2a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #dc9c2a;
+  padding: 3px;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: #dc9c2a;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
+
 .feature-box {
   font-size: 1.7rem;
   padding: 2.5rem;
@@ -171,6 +200,35 @@ body {
     background-image: linear-gradient(to right, #e8bd72, #9f6f1a);
     -webkit-background-clip: text;
     color: transparent; }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    .composition__photo:hover {
+      outline: 1.5rem solid #dc9c2a;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+  .composition img {
+    border: 2px solid #e1e3e7; }
 
 .row {
   max-width: 114rem;
@@ -218,4 +276,8 @@ body {
 
 .section-about {
   background-color: #e1e3e7;
-  background-size: cover; }
+  margin: 2rem 8rem 2rem 8rem; }
+
+.section-service {
+  background-color: #e1e3e7;
+  margin: 2rem 8rem 2rem 8rem; }
