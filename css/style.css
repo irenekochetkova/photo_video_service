@@ -133,6 +133,17 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(225, 227, 231, 0.2); }
 
+.heading-fourth {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #e8bd72, #9f6f1a);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  transition: all .2s; }
+
 .paragraph {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
@@ -140,6 +151,9 @@ body {
 
 .u-center-text {
   text-align: center !important; }
+
+.u-center-item {
+  align-item: center !important; }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
@@ -149,6 +163,20 @@ body {
 
 .u-margin-top-big {
   margin-top: 8rem !important; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .3;
+  overflow: hidden; }
+  .bg-video_content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -240,7 +268,6 @@ body {
       width: 80%;
       margin: 0 auto; }
       .feature-box_side ul li {
-        text-justify: inter-word;
         font-size: 1.5rem;
         padding: .2rem; }
         .feature-box_side ul li:not(:last-child) {
@@ -324,6 +351,21 @@ body {
   .card:hover {
     transform: translateY(-1.5rem) scale(1.2); }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 10rem;
+  font-size: 1.7rem;
+  transform: skewX(-12deg); }
+  .story_text {
+    transform: skewX(12deg); }
+    .story_text ul li {
+      margin-left: 2.7rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -368,7 +410,7 @@ body {
   .header a {
     margin: 10rem 15rem 0 15rem; }
 
-.section-about {
+.section-prefooter-1 {
   background-color: #e1e3e7; }
 
 .section-service {
@@ -377,4 +419,8 @@ body {
 
 .section-list-services {
   background-color: #3d3f42;
+  padding-bottom: 8rem; }
+
+.section-pricing {
+  position: relative;
   padding-bottom: 8rem; }

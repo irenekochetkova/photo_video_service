@@ -119,6 +119,19 @@ body {
   }
 }
 
+.heading-fourth {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, $color-orangered-light, $color-orangered-dark);
+  -webkit-background-clip: text;
+  color: transparent;
+  // margin-top: 5rem;
+  letter-spacing: .2rem;
+  transition: all .2s;
+}
+
 .paragraph {
   font-size: $default-font-size;
 
