@@ -9,7 +9,7 @@
     height: 7rem;
     width: 7rem;
     position: fixed;
-    top: 2.3rem;
+    top: 2.3rem;// don`t touch
     right: 6rem;
     border-radius: 50%;
     z-index: 2000;
@@ -22,11 +22,11 @@
   }
 
   &_background {
-    height: 2.3rem;
+    height: 6rem;
     width: 6rem;
     border-radius: 50%;
     position: fixed;
-    top: 6.5rem;
+    top: 2.3rem;//don`t touch
     right: 6.5rem;
     background-image: radial-gradient($color-primary, $color-primary-dark);
 
@@ -61,7 +61,8 @@
   }
 
   &_item {
-    margin: 1rem;
+    margin: 2rem;
+
   }
 
   
@@ -69,7 +70,7 @@
   &_link {
     &:link,
     &:visited {
-      display: inline-block;
+      // display: inline-block;
       font-size: 3rem;
       font-weight: 300;
       padding: 1rem 2rem;
@@ -81,8 +82,9 @@
       transition: all .4s;
 
       span {
-        margin-right: 1.5rem;
+        margin-right: 15rem;
         display: inline-block;
+        
       }
 
 
@@ -100,7 +102,7 @@
  
   // FUNCTIONALITY
   &_checkbox:checked ~ &_background {
-    transform: scale(80);
+    transform: scale(90);
   }
 
   &_checkbox:checked ~ &_nav {

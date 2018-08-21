@@ -413,7 +413,7 @@ body {
     top: 18%;
     left: 5%; }
   .header a {
-    margin: 15rem 15rem 0 15rem; }
+    margin: 30rem 15rem 0 15rem; }
 
 .footer {
   background-color: #25282e;
@@ -449,11 +449,11 @@ body {
   cursor: pointer; }
 
 .navigation_background {
-  height: 2.3rem;
+  height: 6rem;
   width: 6rem;
   border-radius: 50%;
   position: fixed;
-  top: 6.5rem;
+  top: 2.3rem;
   right: 6.5rem;
   background-image: radial-gradient(#737d8e, #25282e);
   z-index: 1000;
@@ -479,10 +479,9 @@ body {
   width: 100%; }
 
 .navigation_item {
-  margin: 1rem; }
+  margin: 2rem; }
 
 .navigation_link:link, .navigation_link:visited {
-  display: inline-block;
   font-size: 3rem;
   font-weight: 300;
   padding: 1rem 2rem;
@@ -493,7 +492,7 @@ body {
   background-size: 220%;
   transition: all .4s; }
   .navigation_link:link span, .navigation_link:visited span {
-    margin-right: 1.5rem;
+    margin-right: 15rem;
     display: inline-block; }
 
 .navigation_link:hover, .navigation_link:active {
@@ -502,7 +501,7 @@ body {
   transform: translateX(1rem); }
 
 .navigation_checkbox:checked ~ .navigation_background {
-  transform: scale(80); }
+  transform: scale(90); }
 
 .navigation_checkbox:checked ~ .navigation_nav {
   opacity: 1;
