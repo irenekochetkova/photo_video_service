@@ -48,3 +48,19 @@
   }  
 
 }
+
+.book {
+  
+
+  &_img {
+    width: 120%;
+    height: 120%;
+    margin-left: -20rem; 
+   
+    // -ms-transform: rotate(-30deg); /* IE 9 */
+    // -webkit-transform: rotate(-30deg); /* Safari 3-8 */
+    // transform: rotate(-30deg);
+    padding-top: 8rem;
+
+  }
+}

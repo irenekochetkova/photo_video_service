@@ -10,18 +10,21 @@
   background-image: url(../img/header-3.jpg);
   background-size: cover;
   background-position: center;
+
   position: relative;
   
   &_text-box {
 
     position: absolute;
     top: 18%;
-    left: 5%;    
+    left: 5%;  
+
+    a {
+      margin: 15rem;
+    }  
   }
 
-  a {
-    margin: 30rem 15rem 0 15rem;
-  }
+
 
 }
 
