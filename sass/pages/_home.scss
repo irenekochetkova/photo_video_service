@@ -39,6 +39,7 @@
 }
 
 .section-gallery {
+  background-color: $color-white; 
   // padding-bottom: 8rem;
   // padding-top: 8rem;
   padding: 8rem 30rem 8rem 30rem;
@@ -125,10 +126,18 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    // border: 1px $color-orangered;
+    // outline: .05rem  solid $color-primary-light;
+
   }
 
 }
 
+.section-carousel {
+  background-color: $color-white; 
+  padding-bottom: 8rem;
+  padding-top: 8rem;
+}
 
 
 
