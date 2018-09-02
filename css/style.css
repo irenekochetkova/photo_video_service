@@ -155,6 +155,24 @@ body {
   font-weight: 700;
   letter-spacing: .2rem; }
 
+.heading-portfolio {
+  display: block;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: .7rem;
+  color: #fff; }
+
+.heading-portfolio-secondary {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: .5rem;
+  color: #fff;
+  margin-top: 2rem; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -441,6 +459,19 @@ body {
     left: 5%; }
     .header_text-box a {
       margin: 15rem; }
+
+.header_portfolio {
+  height: 60vh;
+  background-image: linear-gradient(rgba(115, 125, 142, 0.93), rgba(37, 40, 46, 0.93)), url(../img/photo-3.jpeg);
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .header_portfolio_text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 .footer {
   background-color: #25282e;
