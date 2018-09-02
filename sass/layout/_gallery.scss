@@ -76,6 +76,13 @@
       grid-row: 6 / span 2;
       grid-column: 8 / -1;
     }
+
+    &:hover {
+      transform: translateY(2rem) scale(1.5);
+      transition: all .5s;
+    }
+
+
   }
 
   &_img {
@@ -85,7 +92,11 @@
     display: block;
     // border: 1px $color-orangered;
     // outline: .05rem  solid $color-primary-light;
-
+    
+    
   }
 
+
+
 }
+

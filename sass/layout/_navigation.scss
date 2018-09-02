@@ -28,7 +28,8 @@
     position: fixed;
     top: 2.3rem;//don`t touch
     right: 6.5rem;
-    background-image: radial-gradient($color-primary, $color-primary-dark);
+    // background-image: radial-gradient($color-secondary, $color-secondary);
+     background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93));
 
     z-index: 1000;
     // transition: transform .8s;

@@ -10,8 +10,11 @@
 }
 
 .section-list-services {
-  background-color: #3d3f42;
+  // background-color: #101d2c;
   padding-bottom: 8rem;
+  background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93)), url(../img/service-back.jpeg);
+  background-size: cover;
+  background-position: bottom;
 }
 
 .prefooter-2 {
