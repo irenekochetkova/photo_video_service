@@ -9,7 +9,7 @@
     height: 7rem;
     width: 7rem;
     position: fixed;
-    top: 2.3rem;// don`t touch
+    top: 2rem;// don`t touch
     right: 6rem;
     border-radius: 50%;
     z-index: 2000;
@@ -17,7 +17,15 @@
     text-align: center;
     cursor: pointer;
 
+    @media only screen and (max-width: $bp-largest) {
+      top: 1.4rem;
+      right: 3.1rem;
+    }
 
+    @media only screen and (max-width: $bp-large) {
+      top: 1.5rem;
+      right: 3.1rem;
+    }
    
 
   }
@@ -27,7 +35,7 @@
     width: 6rem;
     border-radius: 50%;
     position: fixed;
-    top: 2.3rem;//don`t touch
+    top: 2.5rem;//don`t touch
     right: 6.5rem;
     // background-image: radial-gradient($color-secondary, $color-secondary);
      background-image: linear-gradient(rgba($color-secondary, .93), rgba($color-secondary, .93));
@@ -36,6 +44,15 @@
    
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
+    @media only screen and (max-width: $bp-largest) {
+      top: 1.5rem;
+      right: 3.5rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      top: 1.7rem;
+      right: 3.6rem;
+    }
 
 
   }
