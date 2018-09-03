@@ -40,10 +40,10 @@ html {
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 75%; } }
   @media only screen and (max-width: 62.5em) {
     html {
-      font-size: 50%; } }
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
@@ -393,7 +393,8 @@ body {
   padding-top: 8rem; }
   @media only screen and (max-width: 62.5em) {
     .book_img {
-      padding-top: 0; } }
+      padding-top: 0;
+      margin-left: -7rem; } }
 
 .card {
   perspective: 150rem;
@@ -486,7 +487,6 @@ body {
     margin-bottom: 8rem; }
     @media only screen and (max-width: 62.5em) {
       .row:not(:last-child) {
-        max-width: 50rem;
         padding: 0 3rem; } }
   .row::after {
     content: "";
@@ -550,7 +550,7 @@ body {
   color: #e1e3e7; }
   @media only screen and (max-width: 62.5em) {
     .footer {
-      padding: 8rem 0; } }
+      text-align: center; } }
   .footer_navigation-icon {
     display: inline-block;
     margin-right: 2.2rem; }
