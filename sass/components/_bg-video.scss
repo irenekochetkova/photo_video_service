@@ -51,10 +51,16 @@
       left: 50%;
       top: 45%;
 
+      @media only screen and (max-width: $bp-largest) {
+        left: 55%;
+        top: 55%;
+        height: 30%;
+        width: 30%; 
+      }
       @media only screen and (max-width: $bp-large) {
         left: 55%;
         top: 55%;
-        height: 50%;
+        height: 30%;
         width: 30%; 
       }
   }

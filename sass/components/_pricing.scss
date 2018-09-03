@@ -8,10 +8,21 @@
   padding-left: 10rem;
   font-size: 1.7rem;
   transform: skewX(-12deg);
-
+  
+  @media only screen and (max-width: $bp-large) {
+      transform: skewX(0);
+   
+    }
 
   &_text {
     transform: skewX(12deg);
+
+    @media only screen and (max-width: $bp-large) {
+      transform: skewX(0);
+   
+    }
+
+    
 
     ul {
       li {

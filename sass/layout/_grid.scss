@@ -9,11 +9,6 @@
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
 
-    
-    @media only screen and (max-width: $bp-large) {
-      padding: 0 3rem;
-    }
-
 
     
   }

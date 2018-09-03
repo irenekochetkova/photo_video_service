@@ -41,9 +41,9 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 75%; } }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 50em) {
     html {
-      font-size: 75%; } }
+      font-size: 60%; } }
 
 body {
   box-sizing: border-box;
@@ -155,8 +155,9 @@ body {
 
 .paragraph {
   font-size: 1.6rem; }
-  .paragraph:not(:last-child) {
-    margin-bottom: 3rem; }
+  @media only screen and (max-width: 62.5em) {
+    .paragraph:not(:last-child) {
+      margin-bottom: .5rem; } }
 
 .heading-primary-footer {
   text-transform: uppercase;
@@ -235,11 +236,17 @@ body {
     box-shadow: 0 1.5rem 4rem rgba(16, 29, 44, 0.4);
     left: 50%;
     top: 45%; }
+    @media only screen and (max-width: 75em) {
+      .card-about--1 {
+        left: 55%;
+        top: 55%;
+        height: 30%;
+        width: 30%; } }
     @media only screen and (max-width: 62.5em) {
       .card-about--1 {
         left: 55%;
         top: 55%;
-        height: 50%;
+        height: 30%;
         width: 30%; } }
 
 .btn, .btn:link, .btn:visited {
@@ -455,8 +462,14 @@ body {
   padding-left: 10rem;
   font-size: 1.7rem;
   transform: skewX(-12deg); }
+  @media only screen and (max-width: 62.5em) {
+    .story {
+      transform: skewX(0); } }
   .story_text {
     transform: skewX(12deg); }
+    @media only screen and (max-width: 62.5em) {
+      .story_text {
+        transform: skewX(0); } }
     .story_text ul li {
       margin-left: 2.7rem; }
 
@@ -485,9 +498,6 @@ body {
       margin: 0 10rem; } }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
-    @media only screen and (max-width: 62.5em) {
-      .row:not(:last-child) {
-        padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -841,6 +851,9 @@ body {
 .section-service {
   background-color: #fff;
   padding-bottom: 8rem; }
+  @media only screen and (max-width: 75em) {
+    .section-service a {
+      margin-bottom: 4em; } }
 
 .section-list-services {
   padding-bottom: 8rem;
