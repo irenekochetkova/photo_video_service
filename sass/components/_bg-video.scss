@@ -19,10 +19,13 @@
 
 .gallery-video {
 
-  & video {
-    width: 100%;
-    height: auto;
-  }
+  // & video {
+  //   width: 100%;
+  //   height: auto;
+
+  //   @media only screen and (max-width: $bp-large) {
+  //     width: 200%;
+  //   }
 }
 
 .card-about {

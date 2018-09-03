@@ -211,10 +211,6 @@ body {
     width: 100%;
     object-fit: cover; }
 
-.gallery-video video {
-  width: 100%;
-  height: auto; }
-
 .card-about {
   position: relative;
   padding: 20rem 40rem 50rem 40rem; }
@@ -844,6 +840,19 @@ body {
     height: 100%;
     object-fit: cover;
     display: block; }
+
+.gallery-video {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem; }
+  @media only screen and (max-width: 75em) {
+    .gallery-video {
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-columns: repeat(1, 1fr); } }
+  .gallery-video video {
+    width: 100%;
+    height: auto; }
 
 .section-prefooter-1 {
   background-color: #e1e3e7; }
