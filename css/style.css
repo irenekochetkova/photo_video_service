@@ -205,6 +205,25 @@ body {
   width: 100%;
   height: auto; }
 
+.card-about {
+  position: relative;
+  padding: 20rem 40rem 50rem 40rem; }
+  .card-about-video_content-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: 5px solid #9f6f1a;
+    height: auto;
+    width: 50%;
+    box-shadow: 0 1.5rem 4rem rgba(16, 29, 44, 0.4); }
+  .card-about--1 {
+    position: absolute;
+    outline: 5px solid #9f6f1a;
+    box-shadow: 0 1.5rem 4rem rgba(16, 29, 44, 0.4);
+    left: 50%;
+    top: 45%; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -402,7 +421,7 @@ body {
 .list {
   list-style: none;
   margin: 5rem 0;
-  padding: 5rem 0; }
+  padding-top: 5rem; }
   .list_item {
     flex: 0 0 50%;
     margin-bottom: .7rem;
@@ -548,7 +567,7 @@ body {
   text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 220%;
-  transition: all .4s; }
+  transition: all .2s; }
   .navigation_link:link span, .navigation_link:visited span {
     margin-right: 15rem;
     display: inline-block; }
@@ -783,3 +802,7 @@ body {
 .section-gallery-video {
   background-color: #fff;
   padding: 0 20rem 0 20rem; }
+
+.portfolio-about {
+  background-color: #fff;
+  padding-bottom: 15rem; }

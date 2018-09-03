@@ -12,6 +12,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+
   }
 }
 
@@ -23,6 +24,55 @@
     height: auto;
   }
 }
+
+.card-about {
+  position: relative;
+  padding: 20rem 40rem 50rem 40rem;
+  // padding-top: 25rem;
+
+  &-video_content-2 {
+    // position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // top: 10%;
+    // left: 30%;
+    outline: 5px solid $color-orangered-dark;
+    
+    height: auto;
+    width: 50%;
+    // z-index: 1000;
+    // opacity: .6;
+    // overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-secondary, .4);
+
+    // &_content-2 {
+    //   height: 100%;
+    //   width: 100%;
+    //   // object-fit: cover;
+
+    //   // outline: 5px solid $color-orangered-dark;
+    // } 
+  }
+
+  &--1 {
+      position: absolute;
+      outline: 5px solid $color-orangered-dark;
+      box-shadow: 0 1.5rem 4rem rgba($color-secondary, .4);
+      // width: 50vh;
+      left: 50%;
+      top: 45%;
+  }
+
+    
+
+  // }
+
+}
+
+  
+
 
 
 
