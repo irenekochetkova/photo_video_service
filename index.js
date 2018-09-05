@@ -1,48 +1,71 @@
-// CAROUSEL
+/* global Vue, VueRouter, axios */
 
-// var slideIndex = 1;
-// showSlides(slideIndex);
+var HomePage = {
+  template: "#home-page",
+  data: function() {
+    return {
+      
+    };
+  },
+  created: function() {},
+  methods: {},
+  computed: {}
+};
 
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
+var ServicePage = {
+  template: "#service-page",
+  data: function() {
+    return {
+      
+    };
+  },
+  created: function() {},
+  methods: {},
+  computed: {}
+};
 
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
+var PricingPage = {
+  template: "#pricing-page",
+  data: function() {
+    return {
+      
+    };
+  },
+  created: function() {},
+  methods: {},
+  computed: {}
+};
 
-// function showSlides(n) {
-//   var i;
-//   var slides = document.getElementsByClassName("mySlides");
-//   var dots = document.getElementsByClassName("dot");
-//   if (n > slides.length) {slideIndex = 1}    
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//       slides[i].style.display = "none";  
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//       dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex-1].style.display = "block";  
-//   dots[slideIndex-1].className += " active";
-// }
+var PortfolioPage = {
+  template: "#portfolio-page",
+  data: function() {
+    return {
+      
+    };
+  },
+  created: function() {},
+  methods: {},
+  computed: {}
+};
 
 
-// CAROUSEL AUTOMATICALLY
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
+
+var router = new VueRouter({
+  routes: [
+  { path: "/", component: HomePage },
+  { path: "/service", component: ServicePage },
+  { path: "/price", component: PricingPage },
+  { path: "/portfolio", component: PortfolioPage }
+
+  ],
+  scrollBehavior: function(to, from, savedPosition) {
+    return { x: 0, y: 0 };
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1} 
-  slides[slideIndex-1].style.display = "block"; 
-  setTimeout(showSlides, 3500); // Change image every 3.5 seconds
-}
+});
 
-
+var app = new Vue({
+  el: "#vue-app",
+  router: router
+});
 

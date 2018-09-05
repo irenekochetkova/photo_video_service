@@ -31,9 +31,18 @@
 .card-about {
   position: relative;
   padding: 20rem 40rem 50rem 40rem;
+
+   @media only screen and (max-width: $bp-largest) {
+       padding: 5rem 40rem 30rem 40rem;
+      }
   
   @media only screen and (max-width: $bp-large) {
-    padding-top: 3rem ;
+    padding: 10rem 20rem 10rem 20rem;
+   
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+   padding: 5rem 15rem 35rem 5rem;
    
   }
 
@@ -52,19 +61,22 @@
       outline: 5px solid $color-orangered-dark;
       box-shadow: 0 1.5rem 4rem rgba($color-secondary, .4);      
       left: 50%;
-      top: 45%;
+      top: 50%;
+      height: auto;
+      width: 30%;
 
-      @media only screen and (max-width: $bp-largest) {
-        left: 55%;
-        top: 55%;
-        height: 30%;
-        width: 30%; 
-      }
+      
       @media only screen and (max-width: $bp-large) {
         left: 55%;
         top: 55%;
-        height: 30%;
-        width: 30%; 
+        height: auto;
+        width: 25%; 
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        left: 55%;
+        height: auto;
+        width: 35%; 
       }
   }
 

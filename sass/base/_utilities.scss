@@ -2,12 +2,16 @@
   text-align: center !important;
 }
 
+
+
 .u-center-item {
   align-item: center !important;
 }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
+
+ 
 
 }
 
@@ -23,7 +27,11 @@
 
 .u-margin-top-big {
   margin-top: 8rem !important;
-
+   
+  @media only screen and (max-width: $bp-large) {
+    margin-bottom: 2rem !important;
+   
+  }
  
 }
 

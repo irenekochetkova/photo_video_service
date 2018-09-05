@@ -68,6 +68,10 @@ body {
     letter-spacing: 3.6rem;
     margin-right: -3.6rem;
     text-align: center; }
+    @media only screen and (max-width: 37.5em) {
+      .top_logo-box-main {
+        letter-spacing: 1.6rem;
+        margin-right: -1.6rem; } }
   .top_logo-box-sub {
     color: #fff;
     font-size: 1.4rem;
@@ -89,6 +93,20 @@ body {
   animation-timing-function: ease-out; }
   .heading-primary-main-ampersand {
     color: #dc9c2a !important; }
+  @media only screen and (max-width: 75em) {
+    .heading-primary-main {
+      letter-spacing: 1rem;
+      font-size: 3rem; } }
+  @media only screen and (max-width: 50em) {
+    .heading-primary-main {
+      letter-spacing: .5rem;
+      margin-bottom: 4rem;
+      font-size: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary-main {
+      letter-spacing: .5rem;
+      margin-bottom: 4rem;
+      font-size: 3rem; } }
 
 .heading-primary-sub {
   display: block;
@@ -98,6 +116,16 @@ body {
   font-weight: 700;
   letter-spacing: 1rem;
   animation: moveInRight 1s ease-out; }
+  @media only screen and (max-width: 50em) {
+    .heading-primary-sub {
+      letter-spacing: .3rem;
+      margin-bottom: 3.5rem;
+      font-size: 1.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary-sub {
+      letter-spacing: .3rem;
+      margin-bottom: 4.5rem;
+      font-size: 1.5rem; } }
 
 .heading-secondary {
   font-size: 3rem;
@@ -110,6 +138,17 @@ body {
   margin-top: 5rem;
   letter-spacing: .2rem;
   transition: all .2s; }
+  @media only screen and (max-width: 50em) {
+    .heading-secondary {
+      letter-spacing: .2;
+      margin-bottom: 0rem;
+      margin-top: 2rem;
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary {
+      letter-spacing: 0;
+      margin-bottom: 0rem;
+      font-size: 2.5rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -164,6 +203,9 @@ body {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: .2rem; }
+  @media only screen and (max-width: 75em) {
+    .heading-primary-footer {
+      font-size: 1.5rem; } }
 
 .heading-portfolio {
   display: block;
@@ -172,6 +214,9 @@ body {
   font-weight: 700;
   letter-spacing: .7rem;
   color: #fff; }
+  @media only screen and (max-width: 62.5em) {
+    .heading-portfolio {
+      font-size: 3rem; } }
 
 .heading-portfolio-secondary {
   display: block;
@@ -182,6 +227,10 @@ body {
   letter-spacing: .5rem;
   color: #fff;
   margin-top: 2rem; }
+  @media only screen and (max-width: 62.5em) {
+    .heading-portfolio-secondary {
+      font-size: 2rem;
+      letter-spacing: 0; } }
 
 .u-center-text {
   text-align: center !important; }
@@ -197,6 +246,9 @@ body {
 
 .u-margin-top-big {
   margin-top: 8rem !important; }
+  @media only screen and (max-width: 62.5em) {
+    .u-margin-top-big {
+      margin-bottom: 2rem !important; } }
 
 .bg-video {
   position: absolute;
@@ -214,9 +266,15 @@ body {
 .card-about {
   position: relative;
   padding: 20rem 40rem 50rem 40rem; }
+  @media only screen and (max-width: 75em) {
+    .card-about {
+      padding: 5rem 40rem 30rem 40rem; } }
   @media only screen and (max-width: 62.5em) {
     .card-about {
-      padding-top: 3rem; } }
+      padding: 10rem 20rem 10rem 20rem; } }
+  @media only screen and (max-width: 50em) {
+    .card-about {
+      padding: 5rem 15rem 35rem 5rem; } }
   .card-about-video_content-2 {
     position: absolute;
     top: 50%;
@@ -231,19 +289,20 @@ body {
     outline: 5px solid #9f6f1a;
     box-shadow: 0 1.5rem 4rem rgba(16, 29, 44, 0.4);
     left: 50%;
-    top: 45%; }
-    @media only screen and (max-width: 75em) {
-      .card-about--1 {
-        left: 55%;
-        top: 55%;
-        height: 30%;
-        width: 30%; } }
+    top: 50%;
+    height: auto;
+    width: 30%; }
     @media only screen and (max-width: 62.5em) {
       .card-about--1 {
         left: 55%;
         top: 55%;
-        height: 30%;
-        width: 30%; } }
+        height: auto;
+        width: 25%; } }
+    @media only screen and (max-width: 50em) {
+      .card-about--1 {
+        left: 55%;
+        height: auto;
+        width: 35%; } }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -397,7 +456,9 @@ body {
   @media only screen and (max-width: 62.5em) {
     .book_img {
       padding-top: 0;
-      margin-left: -7rem; } }
+      margin-left: 4rem;
+      width: 80%;
+      height: auto; } }
 
 .card {
   perspective: 150rem;
@@ -535,6 +596,13 @@ body {
     left: 5%; }
     .header_text-box a {
       margin: 15rem; }
+      @media only screen and (max-width: 75em) {
+        .header_text-box a {
+          margin: 5rem; } }
+      @media only screen and (max-width: 50em) {
+        .header_text-box a {
+          margin: 0;
+          padding: 0; } }
 
 .header_portfolio {
   height: 60vh;
@@ -897,4 +965,7 @@ body {
 
 .portfolio-about {
   background-color: #fff;
-  padding-bottom: 15rem; }
+  padding: 0 8rem 15rem 8rem; }
+  @media only screen and (max-width: 75em) {
+    .portfolio-about {
+      padding-bottom: 8rem; } }

@@ -1,27 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <title>My App</title>
+  
+ 
+</head>
+<body>
 
-
-
-    <title>Photo and video</title>  
-
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script src="index.js" defer></script>
-
-  </head>
-  <body>
-
-    <div class="navigation">
+  <div class="navigation " >
       <input type="checkbox" class="navigation_checkbox" id="navi-toggle">
 
       <label for="navi-toggle" class="navigation_button">
@@ -30,12 +27,12 @@
 
       <div class="navigation_background">&nbsp;</div>
 
-      <nav class="navigation_nav">
+      <nav class="navigation_nav" >
         <ul class="navigation_list">
-         <li class="navigation_item"><a href="about.html" class="navigation_link">About Us</a></li>
-          <li class="navigation_item"><a href="services.html" class="navigation_link">Services</a></li>
-          <li class="navigation_item"><a href="pricing.html" class="navigation_link">Pricing</a></li>
-          <li class="navigation_item"><a href="portfolio.html" class="navigation_link">Portfolio</a></li>
+         <li class="navigation_item"><a href="/#/" class="navigation_link">About Us</a></li>
+          <li class="navigation_item"><a href="/#/service" class="navigation_link">Services</a></li>
+          <li class="navigation_item"><a href="/#/price" class="navigation_link">Pricing</a></li>
+          <li class="navigation_item"><a href="/#/portfolio" class="navigation_link">Portfolio</a></li>
           <li class="navigation_item"><a href="#" class="navigation_link">Book now</a></li>
         </ul>
       </nav>
@@ -51,396 +48,13 @@
         <span>Digital</span>
       </div>  
     </div>
+  <div id="vue-app">
 
-    <header class="header">
-      <div class="header_text-box">
-        <div class="heading-primary-main">
-          <span>Photograthy</span>
-          <span class="heading-primary-main-ampersand">&amp;</span>
-          <span >Video</span>
-        </div>
-        <div class="heading-primary-sub">
-          <span class="heading-primary-sub">Professional photography and <br>full digital production</span>
-        </div>
+    <router-view></router-view>
 
-        <a href="services.html" class="btn btn-orangered btn-animated">Choose the service</a>
-
-      </div>        
-
-      
-
-
-    </header>
-
-    <main>
-      
-
-      <section class="section-service">
-        <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">
-            Services
-          </h2>
-        </div>
-
-        <div class="row">
-          <div class="col-1-of-2">
-            <h3 class="heading-tertiary u-margin-bottom-small">Photograthy</h3>
-            <div class="paragraph">
-              <ul>
-                <li>DVD Slideshows</li>
-                <li>High Resolution Digital Copies</li>
-                <li>Professional Quality Prints </li>
-              </ul>
-            </div>
-            <h3 class="heading-tertiary u-margin-bottom-small">Video production</h3>
-            <div class="paragraph">
-              <ul>
-                <li>Full Digital Production from Start to Finish</li>
-                <li>Standard 30 Frames per second & Film-Style 24 Frames per second videography</li>
-                
-                <li>Professional Quality DVD Authoring & Duplication</li>
-                
-              </ul>
-            </div>
-            <a href="services.html" class="btn-text">Learn more &rarr;</a>
-          </div>
-          <div class="col-1-of-2">
-            <div class="composition">
-              <img src="img/wedding_5-small.jpeg" alt="Photo 1" class="composition__photo composition__photo--p1">
-              <img src="img/people_1-small.jpeg" alt="Photo 2" class="composition__photo composition__photo--p2">
-              <img src="img/child_6-small.jpeg" alt="Photo 3" class="composition__photo composition__photo--p3">
-            </div>
-          </div>  
-        </div> 
-      </section>
-      
-
-      <section class="section-prefooter-1">
-        <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">
-            Why choose us
-          </h2>
-        </div>
-        <div class="row">
-          <div class="col-1-of-4">
-            <div class="feature-box">
-              <i class="feature-box__icon fa fa-diamond"></i>
-                <p>A unique company that provides its customers with unique services and unforgettable impressions.</p>      
-            </div>
-          </div>
-          <div class="col-1-of-4">
-            <div class="feature-box">
-             <i class="feature-box__icon fa fa-briefcase"></i>
-               <p>Individual approach. For us, each customer is unique. We carry out work of any complexity taking into account all wishes of the Customer.</p>      
-            </div>
-          </div>
-          <div class="col-1-of-4">
-            <div class="feature-box">
-              <i class="feature-box__icon fa fa-clock-o"></i>
-                <p>Execution of the order on time. All work on the order from the shooting and installation to courier delivery is performed by our employees.</p>      
-            </div>
-          </div>
-          <div class="col-1-of-4">
-            <div class="feature-box">
-              <i class="feature-box__icon fa fa-camera"></i>
-              <p>Modern equipment and software. Emotional and live photos with guaranteed results.</p>      
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- <section class="section-list-services">
-        <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-third">
-            Photograthy and Video Services
-          </h2>
-        </div>
-
-        <div class="row">
-          <div class="col-1-of-3">
-            <div class="card">
-              <div class="card_side card_side--front">
-                <div class="card_picture card_picture--1">
-                  &nbsp;
-                </div>
-                <div class="card_details">
-                  
-                  <div class="card_details-box">
-                    
-                    <h3 class="heading-service u-margin-bottom-small">Weddings</h3>
-                    <p class="">This is a great opportunity to save the best moments! Wedding is an important day, which the newlyweds are looking forward to. Therefore, everything should be at the highest level.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-           <div class="col-1-of-3">
-            <div class="card">
-              <div class="card_side card_side--front">
-                <div class="card_picture card_picture--2">
-                  &nbsp;
-                </div>
-                <div class="card_details">
-                  
-                  <div class="card_details-box">
-                    
-                    <h3 class="heading-service u-margin-bottom-small">Newborns</h3>
-                    <p class="">Photo / video extracts from the maternity home for parents will be an excellent gift for a long memory.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-1-of-3">
-            <div class="card">
-              <div class="card_side card_side--front">
-                <div class="card_picture card_picture--3">
-                  &nbsp;
-                </div>
-                <div class="card_details">
-                  
-                  <div class="card_details-box">
-                    
-                    <h3 class="heading-service u-margin-bottom-small">Kindergartens and schools</h3>
-                    <p class="">We are ready to conduct a professional photo shoot and / or video shooting of any holidays, graduation parties, New Year's matinees, everyday life in kindergarten and school.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-1-of-3">
-            <div class="card">
-              <div class="card_side card_side--front">
-                <div class="card_picture card_picture--4">
-                  &nbsp;
-                </div>
-                <div class="card_details">
-                  
-                  <div class="card_details-box">
-                    
-                    <h3 class="heading-service u-margin-bottom-small">Children</h3>
-                    <p class="">Every child grows at lightning speed. It is important to rememberlife moments as long as possible. The children's professional photographer of our company will come to the rescue.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-           <div class="col-1-of-3">
-            <div class="card">
-              <div class="card_side card_side--front">
-                <div class="card_picture card_picture--5">
-                  &nbsp;
-                </div>
-                <div class="card_details">
-                  
-                  <div class="card_details-box">
-                    
-                    <h3 class="heading-service u-margin-bottom-small">Photo outside</h3>
-                    <p class="">You can order photo and video in the different places where you want.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-1-of-3">
-            <div class="card">
-              <div class="card_side card_side--front">
-                <div class="card_picture card_picture--6">
-                  &nbsp;
-                </div>
-                <div class="card_details">
-                  
-                  <div class="card_details-box">
-                    
-                    <h3 class="heading-service u-margin-bottom-small">Parties</h3>
-                    <p class="">Photo and video shooting of weddings, weddings, celebrations, corporate parties, portfolios, etc..</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="u-center-text">
-          <a href="#" class="btn btn-orangered btn-animated">Explore prices</a>
-        </div> 
-      </section> -->
-
-<!--       <section class="section-prefooter-2">
-        <div class="u-center-text u-margin-bottom-big">
-          <div class="heading-secondary">
-            <span>Photograthy</span>
-            <span class="heading-primary-main-ampersand">&amp;</span>
-            <span >Video</span>
-          </div>
-          <div class="heading-primary-sub u-margin-bottom-small">
-            <span>choose packages</span>
-          </div>    
-          
-        </div>
-
-        <div class="row">
-          <div class="col-1-of-3">
-            <div class="feature-box">
-              <i class="feature-box__icon-star fa fa-star"></i>
-              <i class="feature-box__icon-star fa fa-star"></i>
-              <i class="feature-box__icon-star fa fa-star"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">Premium</h3>
-                <div class="feature-box_side">
-                   <ul>
-                    <li>15 work hours & 2 photographers & 2 hours consultation</li>
-                  </ul>
-                </div>      
-            </div>
-          </div>
-          <div class="col-1-of-3">
-            <div class="feature-box">
-             <i class="feature-box__icon-star fa fa-star"></i>
-             <i class="feature-box__icon-star fa fa-star"></i>
-             <h3 class="heading-tertiary u-margin-bottom-small">Standart</h3>
-               <div class="feature-box_side">
-                 <ul>
-                    <li>12 work hours & 1 photographer & 1 hour consultation</li>
-                  </ul>
-               </div>      
-            </div>
-          </div>
-          <div class="col-1-of-3">
-            <div class="feature-box">
-              <i class="feature-box__icon-star fa fa-star"></i>
-              <h3 class="heading-tertiary u-margin-bottom-small">Basic</h3>
-              <div class="feature-box_side">
-                <ul>
-                  <li>6 work hours & 1 photographer & available only on weekdays& without consultation</li>
-                </ul>
-              </div>      
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-pricing">
-        <div class="bg-video">
-          <video class="bg-video_content" autoplay muted loop>
-            <source src="img/Film-set.mp4" type="video/mp4">
-            <source src="img/Film-set.webm" type="video/webm">
-              Your browser is not supported!
-          </video>
-        </div>
-
-        <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">
-            We have good price for you
-          </h2>
-        </div>
-
-        <div class="row">
-          <div class="story">
-
-            <div class="story_text">
-              <h3 class="heading-fourth u-margin-bottom-small">
-                premium package - $2699
-              </h3>
-              <ul>
-                  <li>Up to 15 hours of coverage</li>
-                  <li>2 Hightly Experienced Photograthers</li>
-                  <li>Unlimited locations</li>
-                  <li>Up to 2 hours consultation</li>
-                </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="story">
-            <div class="story_text">
-              <h3 class="heading-fourth u-margin-bottom-small">
-                standart package - $1799
-              </h3>
-              <ul>
-                  <li>Up to 12 hours of coverage</li>
-                  <li>1 Hightly Experienced Photograther</li>
-                  <li>Unlimited locations</li>
-                  <li>Up to 1 hours consultation</li>
-                </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="story">
-            <div class="story_text">
-              <h3 class="heading-fourth u-margin-bottom-small">
-                basic package - $1499
-              </h3>
-              <ul>
-                  <li>Up to 6 hours of coverage</li>
-                  <li>1 Hightly Experienced Photograther</li>
-                  <li>Unlimited locations</li>
-                  <li>Available only on weekdays</li>
-                </ul>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <section class="section-prefooter-3">
-        <div class="u-center-text u-margin-bottom-big">
-          <div class="heading-secondary">
-            <span>Contact us</span>            
-          </div>
-          <div class="heading-primary-sub u-margin-bottom-small">
-            <span>ZIZI</span>
-            <span>photo & video & digital</span>
-          </div>   
-          
-        </div>
-
-        <div class="row">
-          <div class="col-1-of-3">
-            <div class="feature-box">
-              <i class="feature-box__icon fa fa-calendar"></i>
-            
-                <div class="feature-box_side">
-                   <ul>
-                    <li>Monday - Friday</li>
-                    <li>9.00 am - 18.00 pm</li>
-                  </ul>
-                </div>      
-            </div>
-          </div>
-          <div class="col-1-of-3">
-            <div class="feature-box">
-             <i class="feature-box__icon fa fa-phone"></i>
-               <div class="feature-box_side">
-                 <ul>
-                    <li>+1(650)222-33-33</li>
-                    <li>+1(650)222-44-44</li>
-                  </ul>
-               </div>      
-            </div>
-          </div>
-          <div class="col-1-of-3">
-            <div class="feature-box">
-              <i class="feature-box__icon fa fa-envelope"></i>
-              <div class="feature-box_side">
-                <ul>
-                  <li><b>Email:</b> company1@gmail.com</li>
-                  <li><b>Address:</b> 4721 West EI Camino Real, Redwood City, CA 63098</li>
-                </ul>
-              </div>      
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      
-    </main>
-
-    <footer class="footer">
+  </div>
+  
+  <footer class="footer">
       <div class="row">
         <div class="col-1-of-3">
           <div class="footer_navigation">
@@ -475,6 +89,705 @@
       </div>
       
     </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="index.js" defer></script>
+   
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    
+    
+    <script src="carousel.js" defer></script>
+
+
+</body>
+</html>
+
+<template id="home-page">
+  <div class="vue-component">
+    <header class="header">
+      <div class="header_text-box">
+        <div class="heading-primary-main">
+          <span>Photograthy</span>
+          <span class="heading-primary-main-ampersand">&amp;</span>
+          <span >Video</span>
+        </div>
+        <div class="heading-primary-sub">
+          <span class="heading-primary-sub">Professional photography and <br>full digital production</span>
+        </div>
+
+        <a href="/#/service" class="btn btn-orangered btn-animated">Choose the service</a>
+
+      </div>         
+    </header>
+
+    <section class="section-service">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          Services
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <h3 class="heading-tertiary u-margin-bottom-small">Photograthy</h3>
+          <div class="paragraph">
+            <ul>
+              <li>DVD Slideshows</li>
+              <li>High Resolution Digital Copies</li>
+              <li>Professional Quality Prints </li>
+            </ul>
+          </div>
+          <h3 class="heading-tertiary u-margin-bottom-small">Video production</h3>
+          <div class="paragraph">
+            <ul>
+              <li>Full Digital Production from Start to Finish</li>
+              <li>Standard 30 Frames per second & Film-Style 24 Frames per second videography</li>
+              
+              <li>Professional Quality DVD Authoring & Duplication</li>
+              
+            </ul>
+          </div>
+          <a href="/#/service" class="btn-text">Learn more &rarr;</a>
+        </div>
+        <div class="col-1-of-2">
+          <div class="composition">
+            <img src="img/wedding_5-small.jpeg" alt="Photo 1" class="composition__photo composition__photo--p1">
+            <img src="img/people_1-small.jpeg" alt="Photo 2" class="composition__photo composition__photo--p2">
+            <img src="img/child_6-small.jpeg" alt="Photo 3" class="composition__photo composition__photo--p3">
+          </div>
+        </div>  
+      </div> 
+    </section>
+
+    <section class="section-price">
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="book">
+            <img src="img/photo-1.jpeg" alt="book 1" class="book_img">
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <h2 class="heading-secondary u-margin-top-big">
+            We have good prices for you
+          </h2>
+          <h3 class="heading-primary-footer">Select the right package</h3>
+          <div class="">              
+            <ul class="list">
+              <li class="list_item">Our mission is to bring to the best products at the best prices;</li>
+              <li class="list_item">We want you to love your custom-made products as much as we do;</li>
+              <li class="list_item">We offer free shipping over 300$;</li>                
+              <li class="list_item">Orders may be placed by email, telephone, fax, or mail;</li>                
+            </ul>
+            <a href="/#/price" class="btn-text">Learn more &rarr;</a>
+          </div>
+        </div>          
+      </div> 
+    </section>
+
+    <section class="portfolio-about">
+      <div class="u-center-text">
+        <h2 class="heading-secondary">
+          make a choice & get a beautiful blend <br>of traditional, contemporary, artistic & photojournalistic styles
+        </h2>
+        <div class="u-center-text u-margin-top-big">
+          <a href="/#/portfolio" class="btn-text">Learn more &rarr;</a>
+        </div>
+      </div>
+      <div class="card-about">       
+        <video class="card-about-video_content-2" autoplay muted loop>
+        <source src="img/Night-Out.mp4" type="video/mp4">
+        <source src="img/Night-Out.webm" type="video/webm">
+          Your browser is not supported!
+        </video>      
+        <img src="img/gal-18.jpeg" alt="img 1" class="card-about--1">    
+      </div>         
+    </section>
+
+    <section class="section-prefooter-1">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          Why choose us
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="feature-box__icon fa fa-diamond"></i>
+              <p>A unique company that provides its customers with unique services and unforgettable impressions.</p>      
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="feature-box">
+           <i class="feature-box__icon fa fa-briefcase"></i>
+             <p>Individual approach. For us, each customer is unique. We carry out work of any complexity taking into account all wishes of the Customer.</p>      
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="feature-box__icon fa fa-clock-o"></i>
+              <p>Execution of the order on time. All work on the order from the shooting and installation to courier delivery is performed by our employees.</p>      
+          </div>
+        </div>
+        <div class="col-1-of-4">
+          <div class="feature-box">
+            <i class="feature-box__icon fa fa-camera"></i>
+            <p>Modern equipment and software. Emotional and live photos with guaranteed results.</p>      
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
+<template id="service-page">
+  <div class="vue-component">
+    <section class="section-service">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          Services
+        </h2>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-2">
+          <h3 class="heading-tertiary u-margin-bottom-small">Photograthy</h3>
+          <div class="paragraph">
+            <ul>
+              <li>DVD Slideshows</li>
+              <li>High Resolution Digital Copies</li>
+              <li>Professional Quality Prints </li>
+            </ul>
+          </div>
+          <h3 class="heading-tertiary u-margin-bottom-small">Video production</h3>
+          <div class="paragraph">
+            <ul>
+              <li>Full Digital Production from Start to Finish</li>
+              <li>Standard 30 Frames per second & Film-Style 24 Frames per second videography</li>
+              
+              <li>Professional Quality DVD Authoring & Duplication</li>
+              
+            </ul>
+          </div>
+          <a href="/#/service" class="btn-text">Learn more &rarr;</a>
+        </div>
+        <div class="col-1-of-2">
+          <div class="composition">
+            <img src="img/wedding_5-small.jpeg" alt="Photo 1" class="composition__photo composition__photo--p1">
+            <img src="img/people_1-small.jpeg" alt="Photo 2" class="composition__photo composition__photo--p2">
+            <img src="img/child_6-small.jpeg" alt="Photo 3" class="composition__photo composition__photo--p3">
+          </div>
+        </div>  
+      </div> 
+    </section>
+
+      
+
+    <section class="section-list-services">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-third">
+          Photograthy and Video Services
+        </h2>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card_side card_side--front">
+              <div class="card_picture card_picture--1">
+                <!-- &nbsp; -->
+              </div>
+              <div class="card_details">
+                
+                <div class="card_details-box">
+                  
+                  <h3 class="heading-service u-margin-bottom-small">Weddings</h3>
+                  <p class="">This is a great opportunity to save the best moments! Wedding is an important day, which the newlyweds are looking forward to. Therefore, everything should be at the highest level.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-1-of-3">
+          <div class="card">
+            <div class="card_side card_side--front">
+              <div class="card_picture card_picture--2">
+                <!-- &nbsp; -->
+              </div>
+              <div class="card_details">                  
+                <div class="card_details-box">                    
+                  <h3 class="heading-service u-margin-bottom-small">Newborns</h3>
+                  <p class="">Photo / video extracts from the maternity home for parents will be an excellent gift for a long memory.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card_side card_side--front">
+              <div class="card_picture card_picture--3">
+                <!-- &nbsp; -->
+              </div>
+              <div class="card_details">
+                
+                <div class="card_details-box">
+                  
+                  <h3 class="heading-service u-margin-bottom-small">Kindergartens and schools</h3>
+                  <p class="">We are ready to conduct a professional photo shoot and / or video shooting of any holidays, graduation parties, New Year's matinees, everyday life in kindergarten and school.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card_side card_side--front">
+              <div class="card_picture card_picture--4">
+                <!-- &nbsp; -->
+              </div>
+              <div class="card_details">
+                
+                <div class="card_details-box">
+                  
+                  <h3 class="heading-service u-margin-bottom-small">Children</h3>
+                  <p class="">Every child grows at lightning speed. It is important to rememberlife moments as long as possible. The children's professional photographer of our company will come to the rescue.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col-1-of-3">
+          <div class="card">
+            <div class="card_side card_side--front">
+              <div class="card_picture card_picture--5">
+                <!-- &nbsp; -->
+              </div>
+              <div class="card_details">
+                
+                <div class="card_details-box">
+                  
+                  <h3 class="heading-service u-margin-bottom-small">Photo outside</h3>
+                  <p class="">You can order photo and video in the different places where you want.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card">
+            <div class="card_side card_side--front">
+              <div class="card_picture card_picture--6">
+                <!-- &nbsp; -->
+              </div>
+              <div class="card_details">
+                
+                <div class="card_details-box">
+                  
+                  <h3 class="heading-service u-margin-bottom-small">Parties</h3>
+                  <p class="">Photo and video shooting of weddings, weddings, celebrations, corporate parties, portfolios, etc..</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="u-center-text">
+        <a href="/#/price" class="btn btn-orangered btn-animated">Explore prices</a>
+      </div> 
+    </section>
+
+    <section class="section-prefooter-2">
+      <div class="u-center-text u-margin-bottom-big">
+        <div class="heading-secondary">
+          <span>Photograthy</span>
+          <span class="heading-primary-main-ampersand">&amp;</span>
+          <span >Video</span>
+        </div>
+        <div class="heading-primary-sub u-margin-bottom-small">
+          <span>choose packages</span>
+        </div>    
+        
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="feature-box">
+            <i class="feature-box__icon-star fa fa-star"></i>
+            <i class="feature-box__icon-star fa fa-star"></i>
+            <i class="feature-box__icon-star fa fa-star"></i>
+            <h3 class="heading-tertiary u-margin-bottom-small">Premium</h3>
+              <div class="feature-box_side">
+                 <ul>
+                  <li>15 work hours & 2 photographers & 2 hours consultation</li>
+                </ul>
+              </div>      
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="feature-box">
+           <i class="feature-box__icon-star fa fa-star"></i>
+           <i class="feature-box__icon-star fa fa-star"></i>
+           <h3 class="heading-tertiary u-margin-bottom-small">Standart</h3>
+             <div class="feature-box_side">
+               <ul>
+                  <li>12 work hours & 1 photographer & 1 hour consultation</li>
+                </ul>
+             </div>      
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="feature-box">
+            <i class="feature-box__icon-star fa fa-star"></i>
+            <h3 class="heading-tertiary u-margin-bottom-small">Basic</h3>
+            <div class="feature-box_side">
+              <ul>
+                <li>6 work hours & 1 photographer & available only on weekdays& without consultation</li>
+              </ul>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
+<template id="pricing-page">
+  <div class="vue-component ">
+    <section class="section-price">
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="book">
+            <img src="img/photo-1.jpeg" alt="book 1" class="book_img">
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <h2 class="heading-secondary u-margin-top-big">
+            We have good prices for you
+          </h2>
+          <h3 class="heading-primary-footer">Select the right package</h3>
+          <div class="">              
+            <ul class="list">
+              <li class="list_item">Our mission is to bring to the best products at the best prices;</li>
+              <li class="list_item">We want you to love your custom-made products as much as we do;</li>
+              <li class="list_item">We offer free shipping over 300$;</li>                
+              <li class="list_item">Orders may be placed by email, telephone, fax, or mail;</li>                
+            </ul>
+            <a href="/#/price" class="btn-text">Learn more &rarr;</a>
+          </div>
+        </div>          
+      </div> 
+
+    </section>
+
+    
+    <section class="section-pricing">
   
- 
-  </body>
+      <div class="bg-video">
+        <video class="bg-video_content" autoplay muted loop>
+          <source src="img/Film-set.mp4" type="video/mp4">
+          <source src="img/Film-set.webm" type="video/webm">
+            Your browser is not supported!
+        </video>
+      </div>
+
+      
+
+      <div class="row">
+        <div class="story">
+
+          <div class="story_text">
+            <h3 class="heading-fourth u-margin-bottom-small">
+              premium package - $2699
+            </h3>
+            <ul>
+                <li>Up to 15 hours of coverage</li>
+                <li>2 Hightly Experienced Photograthers</li>
+                <li>Unlimited locations</li>
+                <li>Up to 2 hours consultation</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="story">
+          <div class="story_text">
+            <h3 class="heading-fourth u-margin-bottom-small">
+              standart package - $1799
+            </h3>
+            <ul>
+                <li>Up to 12 hours of coverage</li>
+                <li>1 Hightly Experienced Photograther</li>
+                <li>Unlimited locations</li>
+                <li>Up to 1 hours consultation</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="story">
+          <div class="story_text">
+            <h3 class="heading-fourth u-margin-bottom-small">
+              basic package - $1499
+            </h3>
+            <ul>
+                <li>Up to 6 hours of coverage</li>
+                <li>1 Hightly Experienced Photograther</li>
+                <li>Unlimited locations</li>
+                <li>Available only on weekdays</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+       <div class="u-center-text">
+        <a href="/#/portfolio" class="btn btn-orangered btn-animated">Explore portfolio</a>
+      </div> 
+
+    </section>
+
+    <section class="section-prefooter-3">
+      <div class="u-center-text u-margin-bottom-big">
+        <div class="heading-secondary">
+          <span>Contact us</span>            
+        </div>
+        <div class="heading-primary-sub u-margin-bottom-small">
+          <span>ZIZI</span>
+          <span>photo & video & digital</span>
+        </div>   
+        
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="feature-box">
+            <i class="feature-box__icon fa fa-calendar"></i>
+          
+              <div class="feature-box_side">
+                 <ul>
+                  <li>Monday - Friday</li>
+                  <li>9.00 am - 18.00 pm</li>
+                </ul>
+              </div>      
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="feature-box">
+           <i class="feature-box__icon fa fa-phone"></i>
+             <div class="feature-box_side">
+               <ul>
+                  <li>+1(650)222-33-33</li>
+                  <li>+1(650)222-44-44</li>
+                </ul>
+             </div>      
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="feature-box">
+            <i class="feature-box__icon fa fa-envelope"></i>
+            <div class="feature-box_side">
+              <ul>
+                <li><b>Email:</b> company1@gmail.com</li>
+                <li><b>Address:</b> 4721 West EI Camino Real, Redwood City, CA 63098</li>
+              </ul>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
+<template id="portfolio-page">
+  <div class="vue-component">
+    <section class="section-portfolio">
+
+      <div class="header_portfolio">
+        <div class="header_portfolio_text-box">
+          <h2 class="heading-portfolio">
+            <span>Photograthy</span>
+            <span class="heading-primary-main-ampersand">&amp;</span>
+            <span >Video</span><br>
+            <span>Portfolio</span>
+          </h2>
+          <h3 class="heading-portfolio-secondary">
+            <span > make a choice & get<br>  a beautiful blend of traditional, contemporary, artistic & photojournalistic styles</span>
+          </h3>
+        </div>
+      </div>     
+    </section>
+
+    <section class="section-gallery-video">
+      <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+            Video Galleries
+          </h2>
+      </div>
+      <div class="gallery-video">
+        <figure class="gallery-video_item gallery-video_item--1">
+          <video class="gallery_content" controls autoplay>
+            <source src="img/Fetcher.mp4" type="video/mp4">
+            <source src="img/Fetcher.webm" type="video/webm">
+              Your browser is not supported!
+          </video>
+        </figure>
+        <figure class="gallery-video_item gallery-video_item--2">
+          <video class="gallery_content" controls autoplay>
+            <source src="img/EOD.mp4" type="video/mp4">
+            <source src="img/EOD.webm" type="video/webm">
+              Your browser is not supported!
+            </video>
+        </figure>
+        <figure class="gallery-video_item gallery-video_item--3">
+          <video class="gallery_content" controls autoplay>
+            <source src="img/bat.mp4" type="video/mp4">
+            <source src="img/bat.webm" type="video/webm">
+              Your browser is not supported!
+          </video>
+        </figure>
+        <figure class="gallery-video_item gallery-video_item--4">
+          <video class="gallery_content" controls autoplay>
+            <source src="img/The-strip.mp4" type="video/mp4">
+            <source src="img/The-strip.webm" type="video/webm">
+              Your browser is not supported!
+          </video>
+        </figure>
+        <figure class="gallery-video_item gallery-video_item--4">
+          <video class="gallery_content" controls autoplay>
+            <source src="img/wheel.mp4" type="video/mp4">
+            <source src="img/wheel.webm" type="video/webm">
+              Your browser is not supported!
+          </video>
+        </figure>
+        <figure class="gallery-video_item gallery-video_item--4">
+          <video class="gallery_content" controls autoplay>
+            <source src="img/pic.mp4" type="video/mp4">
+            <source src="img/pic.webm" type="video/webm">
+              Your browser is not supported!
+          </video>
+        </figure>
+      </div>
+    </section>    
+
+    <section class="section-carousel">
+      <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+            PHOTOGRATHY Galleries
+          </h2>
+      </div>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+            <img src="img/book-1.jpeg" class="img-carousel">
+          <div class="text">Family</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+            <img src="img/book-2.jpeg" class="img-carousel">
+          <div class="text">Wedding</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+            <img src="img/gal-1.jpeg" class="img-carousel">
+          <div class="text">Team</div>
+        </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <!-- <br> -->
+      <div class="carousel_click">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+    </section>
+
+   
+    <section class="section-gallery">
+      <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+            Potograthy Galleries
+          </h2>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-grid_item gallery-grid_item--1"><img src="img/gal-9.jpeg" alt="Gallery image 1" class="gallery-grid_img"></figure>
+        <figure class="gallery-grid_item gallery-grid_item--2"><img src="img/gal-20.jpg" alt="Gallery image 2" class="gallery-grid_img"></figure>
+        <figure class="gallery-grid_item gallery-grid_item--3"><img src="img/gal-3.jpeg" alt="Gallery image 3" class="gallery-grid_img"></figure>
+        <figure class="gallery-grid_item gallery-grid_item--4"><img src="img/gal-12.jpeg" alt="Gallery image 4" class="gallery-grid_img"></figure>
+        <figure class="gallery-grid_item gallery-grid_item--5"><img src="img/gal-10.jpeg" alt="Gallery image 5" class="gallery-grid_img"></figure>
+        <figure class="gallery-grid_item gallery-grid_item--6"><img src="img/gal-27.jpeg" alt="Gallery image 6" class="gallery-grid_img"></figure>
+        <figure class="gallery-grid_item gallery-grid_item--7"><img src="img/gal-26.png" alt="Gallery image 7" class="gallery-grid_img"></figure>
+        <figure class="gallery-grid_item gallery-grid_item--8"><img src="img/gal-1.jpeg" alt="Gallery image 8" class="gallery-grid_img"></figure>
+        <figure class="gallery-grid_item gallery-grid_item--9"><img src="img/gal-14.jpg" alt="Gallery image 9" class="gallery-grid_img"></figure>
+        <figure class="gallery-grid_item gallery-grid_item--10"><img src="img/gal-11.jpeg" alt="Gallery image 10" class="gallery-grid_img"></figure>
+        <figure class="gallery-grid_item gallery-grid_item--11"><img src="img/gal-16.jpeg" alt="Gallery image 11" class="gallery-grid_img"></figure>
+        <figure class="gallery-grid_item gallery-grid_item--12"><img src="img/gal-2.jpeg" alt="Gallery image 12" class="gallery-grid_img"></figure>
+        <figure class="gallery-grid_item gallery-grid_item--13"><img src="img/gal-18.jpeg" alt="Gallery image 13" class="gallery-grid_img"></figure>
+        <figure class="gallery-grid_item gallery-grid_item--14"><img src="img/gal-19.png" alt="Gallery image 14" class="gallery-grid_img"></figure>              
+      </div>
+     
+    </section>
+
+    <section class="section-prefooter-3">
+      <div class="u-center-text u-margin-bottom-big">
+        <div class="heading-secondary">
+          <span>Contact us</span>            
+        </div>
+        <div class="heading-primary-sub u-margin-bottom-small">
+          <span>ZIZI</span>
+          <span>photo & video & digital</span>
+        </div>   
+        
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          <div class="feature-box">
+            <i class="feature-box__icon fa fa-calendar"></i>
+          
+              <div class="feature-box_side">
+                 <ul>
+                  <li>Monday - Friday</li>
+                  <li>9.00 am - 18.00 pm</li>
+                </ul>
+              </div>      
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="feature-box">
+           <i class="feature-box__icon fa fa-phone"></i>
+             <div class="feature-box_side">
+               <ul>
+                  <li>+1(650)222-33-33</li>
+                  <li>+1(650)222-44-44</li>
+                </ul>
+             </div>      
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="feature-box">
+            <i class="feature-box__icon fa fa-envelope"></i>
+            <div class="feature-box_side">
+              <ul>
+                <li><b>Email:</b> company1@gmail.com</li>
+                <li><b>Address:</b> 4721 West EI Camino Real, Redwood City, CA 63098</li>
+              </ul>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
