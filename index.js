@@ -1,3 +1,6 @@
+
+
+
 /* global Vue, VueRouter, axios */
 
 var HomePage = {
